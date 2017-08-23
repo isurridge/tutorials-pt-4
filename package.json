@@ -1,0 +1,23 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "restart": "pm2 startOrRestart ecosystem.config.js --node-args=\"port=443\"",
+    "deploy": "pm2 deploy ecosystem.config.js production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.7",
+    "alexa-skills": "*",
+    "express": "^4.14.0",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^19.0.0"
+  },
+  "devDependencies": {
+    "pm2": "^2.3.0"
+  }
+}
